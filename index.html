@@ -6,98 +6,126 @@
     <title>Document</title>
 </head>
 <body class="bg-dark">
-    <h1 id="headline" class="my-3 fw-bolder text-light text-center">ADSL troubleshooter</h1>
+    <h1 id="headline" class="my-5 fw-bolder text-light text-center">ADSL troubleshooter</h1>
     <div class="w-75 mx-auto bg-dark shadow-lg p-5 mt-5 text-light">
-        <div class="q-one">
-            <h3>ايه المشكلة في الانترنت ؟</h3>
-            <div class="options d-flex my-3">
-                <div class="form-check mx-2">
-                    <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    <label class="form-check-label " for="exampleRadios1">
-                        بطئ
-                    </label>
-                </div>
-                <div class="form-check mx-2">
-                    <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                    مش شغال
-                    </label>
-                </div>
+        <h3>ممكن توضح استفسارك ؟</h3>
+        <div class="options d-flex my-3">
+            <div class="form-check mx-2">
+                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios1" value="option1">
+                <label class="form-check-label">
+                   عندي مشكلة في استخدام الانترنت
+                </label>
             </div>
-            <div class="answers">
-                <div class="d-none answer">
-                    اتأكد ان لسه متبقي ميجات في الباقة وان الباقة مش في فترة السماح
-                    <br>
-                    اتأكد ان السرعة علي البيت ستريم متطابقة للسرعة المتعاقد عليها علي السيبل
-                    <br>
-                    اتأكد من عدد الاجهزة المتوصل علي الراوتر وان قرايات الخط مناسبة للسرعة المتعاقد عليها
-                    
+            <div class="form-check mx-2">
+                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios1" value="option2">
+                <label class="form-check-label">
+                    عندي مشكلة في تفعيل الانترنت
+                    (activation,conversion,deactivation)
+                </label>
+            </div>
+            
+        </div>
+        <div class="answers">
+            <div class="answer option1">
+                <h3>ايه المشكلة في الانترنت ؟</h3>
+                <div class="options d-flex my-3">
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="option3">
+                        <label class="form-check-label">
+                          بطئ
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="option4">
+                        <label class="form-check-label">
+                           مش شغال
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="option5">
+                        <label class="form-check-label">
+                           بيفصل ويشتغل
+                        </label>
+                    </div>
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="option6">
+                        <label class="form-check-label">
+                           اغير ال
+                           password
+                        </label>
+                    </div>
                 </div>
-                    <div class="d-none answer">
-                        <h3>ايه اللمبات المطفية في الراوتر ؟</h3>
+                <div class="answers">
+                    <div class="answer option3">
+                        اتأكد ان لسه متبقي ميجات في الباقة وان الباقة مش في فترة السماح
+                        <br>
+                        اتأكد ان السرعة علي البيت ستريم متطابقة للسرعة المتعاقد عليها علي السيبل
+                        <br>
+                        اتأكد من عدد الاجهزة المتوصل علي الراوتر وان قرايات الخط مناسبة للسرعة المتعاقد عليها
+                    </div>
+                    <div class="answer option4">
+                        <h3>ايه اللمبات المطفيين في الراوتر ؟</h3>
                         <div class="options d-flex my-3">
                             <div class="form-check mx-2">
-                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios3" value="option3">
-                                <label class="form-check-label " for="exampleRadios3">
-                                    الأربعة مش شغالين
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios3" value="option7">
+                                <label class="form-check-label">
+                                  الأربعة مطفيين
                                 </label>
                             </div>
                             <div class="form-check mx-2">
-                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios4" value="option4">
-                                <label class="form-check-label" for="exampleRadios4">
-                                    لمبة الانترنت بس مطفية
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios3" value="option8">
+                                <label class="form-check-label">
+                                   ال
+                                   ADSL
+                                   والانترنت مطفيين
                                 </label>
                             </div>
                             <div class="form-check mx-2">
-                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios4" value="option4">
-                                <label class="form-check-label" for="exampleRadios4">
-                                    لمبة الانترنت وال
-                                    ADSL
-                                    مطفيين
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios3" value="option9">
+                                <label class="form-check-label">
+                                   الانترنت بس مطفية
                                 </label>
                             </div>
                             <div class="form-check mx-2">
-                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios5" value="option5">
-                                <label class="form-check-label" for="exampleRadios5">
-                                    لمبة ال 
+                                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios3" value="option10">
+                                <label class="form-check-label">
+                                    ال
                                     WLAN
                                     بس مطفية
                                 </label>
                             </div>
                         </div>
-                        <div class="d-none answer">
-                            اتأكد من توصيل الراوتر في مكان مختلف للتأكد ان المشكلة مش في الكهرباء
-                            <br>
-                            لو نفس المشكلة هيحتاج يستبدل الراوتر                            
+                        <div class="answers">
+                            <div class="answer option7">
+                                اتأكد من توصيل الراوتر في مكان مختلف للتأكد ان المشكلة مش في الكهرباء
+                                <br>
+                                لو نفس المشكلة هيحتاج يستبدل الراوتر
+                            </div>
+                            <div class="answer option8">
+                                اتأكد ان الحرارة شغالة علي نفس الرقم بدون تغيير
+                                <br>
+                                لو الخط فايبر اتأكد علي ال bit stream ان الكابينة مش offline
+                            </div>
+                            <div class="answer option9">
+                                اتأكد من توصيل الراوتر في مكان مختلف للتأكد ان المشكلة مش في الكهرباء
+                                <br>
+                                لو نفس المشكلة هيحتاج يستبدل الراوتر
+                            </div>
+                            <div class="answer option10">
+                                اتأكد من توصيل الراوتر في مكان مختلف للتأكد ان المشكلة مش في الكهرباء
+                                <br>
+                                لو نفس المشكلة هيحتاج يستبدل الراوتر
+                            </div>
                         </div>
-                        <div class="d-none answer">
-                            اتأكد ان الحرارة شغالة علي نفس الرقم بدون تغيير
-                            <br>
-                            لو الخط فايبر اتأكد علي ال 
-                            bit stream
-                            ان الكابينة مش 
-                            offline                            
-                        </div>
-                        <div class="d-none answer">
-                            اتأكد ان الحرارة شغالة علي نفس الرقم بدون تغيير
-                            <br>
-                            لو الخط فايبر اتأكد علي ال 
-                            bit stream
-                            ان الكابينة مش 
-                            offline  
-                            <br>
-                            اتأكد من توصيل سلك الحرارة الرائيسي للراوتر مباشرة                          
-                        </div>
-                        <div class="d-none answer">
-                            اتأكد من تشغيل ال 
-                            WLAN
-                            عن طريق صفحة الراوتر                         
-                        </div>
-                        
                     </div>
                 </div>
             </div>
+            <div class="answer option2">
+                option2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quaerat incidunt ipsam? Exercitationem facilis perferendis sed delectus, at mollitia quo ducimus aliquam voluptas cum alias sequi quis quod atque. Perferendis?
+            </div>
+            
         </div>
+
     </div>
 
 
