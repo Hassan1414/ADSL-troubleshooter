@@ -8,16 +8,19 @@
 <body class="bg-dark">
     <h1 id="headline" class="my-5 fw-bolder text-light text-center">ADSL troubleshooter</h1>
     <div class="w-75 mx-auto bg-dark shadow-lg p-5 mt-5 text-light">
+        <div class="text-start">
+            <i class="text-secondary">Choose an option by clicking on the white circle</i>
+        </div>
         <h3>ممكن توضح استفسارك ؟</h3>
         <div class="options d-flex my-3">
             <div class="form-check mx-2">
-                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios1" value="option1">
+                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios1" value="usage">
                 <label class="form-check-label">
                    عندي مشكلة في استخدام الانترنت
                 </label>
             </div>
             <div class="form-check mx-2">
-                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios1" value="option2">
+                <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios1" value="activation">
                 <label class="form-check-label">
                     عندي مشكلة في تفعيل الانترنت
                     (conversion,deactivation)
@@ -26,44 +29,51 @@
             
         </div>
         <div class="answers">
-            <div class="answer option1">
+            <div class="answer usage">
                 <h3>ايه المشكلة في الانترنت ؟</h3>
                 <div class="options d-flex my-3">
                     <div class="form-check mx-2">
-                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="option3">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="slow">
                         <label class="form-check-label">
                           بطئ
                         </label>
                     </div>
                     <div class="form-check mx-2">
-                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="option4">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="down">
                         <label class="form-check-label">
                            مش شغال
                         </label>
                     </div>
                     <div class="form-check mx-2">
-                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="option5">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="unstable">
                         <label class="form-check-label">
                            بيفصل ويشتغل
                         </label>
                     </div>
                     <div class="form-check mx-2">
-                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="option6">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="pass">
                         <label class="form-check-label">
                            اغير ال
                            password
                         </label>
                     </div>
+                    <div class="form-check mx-2">
+                        <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="deny">
+                        <label class="form-check-label">
+                            الباقة خلصت من غير ما استهلكها
+                            (deny usage)
+                        </label>
+                    </div>
                 </div>
                 <div class="answers">
-                    <div class="answer option3">
+                    <div class="answer slow">
                         اتأكد ان لسه متبقي ميجات في الباقة وان الباقة مش في فترة السماح
                         <br>
                         اتأكد ان السرعة علي البيت ستريم متطابقة للسرعة المتعاقد عليها علي السيبل
                         <br>
                         لو نفس المشكلة موجودة هيحتاج يكلم الدعم الفني
                     </div>
-                    <div class="answer option4">
+                    <div class="answer down">
                         <h3>ايه اللمبات المطفيين في الراوتر ؟</h3>
                         <div class="options d-flex my-3">
                             <div class="form-check mx-2">
@@ -122,7 +132,7 @@
                                 علي البيتسريم
                                 <br>
                                 اتأكد من البيتستريم لو ال 
-                                "operational status down"
+                                "operational status down" :
                                 <br>
                                 اتأكد ان الحرارة شغالة علي نفس الرقم بدون تغيير
                                 <br>
@@ -167,7 +177,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="answer option5">
+                    <div class="answer unstable">
                         اتأكد ان الحرارة شغالة علي نفس الرقم بدون تغيير
                         <br>
                         يوصل سلك الحرارة الرئيسي للراوتر من غير 
@@ -175,14 +185,21 @@
                         <br>
                         لو نفس المشكلة موجودة هيحتاج يكلم الدعم الفني
                     </div>
-                    <div class="answer option6">
+                    <div class="answer pass">
                         تقدر تغير الباسورد عن طريق تطبيق انا فودافون والتغيير بيتم خلال ساعة وبيوصل ليك رسالة تأكيد ان الباسورد اتغير
                         <br>
                         غير الباسورد عن طريق صفحة الراوتر
                     </div>
+                    <div class="answer deny">
+                        الكاستمر ممكن يتبعت ليه تقرير مفصل بأستهلاكه من الكود 
+                        #2828*
+                        ويختار تفاصيل الاستهلاك و ده بيعمل 
+                        automated SR
+                        بيتبعت ليه الرسالة بعدها خلال يومين
+                    </div>
                 </div>
             </div>
-            <div class="answer option2">
+            <div class="answer activation">
                 <div class="options d-flex my-3">
                     <div class="form-check mx-2">
                         <input oninput="toggleElementDisplay()" class="form-check-input" type="radio" name="exampleRadios2" value="option21">
